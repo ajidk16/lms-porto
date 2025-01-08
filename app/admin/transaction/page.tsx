@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import BaseTable from "@/components/shared/base-table";
 import { Pagination } from "@nextui-org/pagination";
 import ModalCreateCourse from "@/components/admin/course/modal-create-course";
-const Customer = () => {
+const Transaction = () => {
   const [data, setData] = useState<any[]>([]);
   const [modal, setModal] = useState({ create: false });
 
@@ -23,15 +23,15 @@ const Customer = () => {
   return (
     <div className="space-y-4">
       <div className="flex justify-between">
-        <h3 className="text-2xl">Customer</h3>
+        <h3 className="text-2xl">Transaction</h3>
         <Button
           startContent={<Plus />}
-          color="primary"
+          color="warning"
           onPress={() => {
             setModal((p) => ({ ...p, create: true }));
           }}
         >
-          Create Customer
+          Create Transaction
         </Button>
       </div>
       <Input
@@ -67,4 +67,4 @@ const Customer = () => {
   );
 };
 
-export default Customer;
+export default Transaction;

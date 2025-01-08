@@ -19,7 +19,7 @@ const SidebarAdmin = () => {
     },
     {
       title: "Transaction",
-      url: "/admin/dashboard",
+      url: "/admin/transaction",
       icon: Home,
     },
     {
